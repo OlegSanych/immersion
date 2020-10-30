@@ -17,7 +17,7 @@ try {
 //Получить пользователя по email
 function get_user_by_email($conn, $email)
 {
-    $query = $conn->prepare("SELECT email FROM users WHERE email = :email");
+    $query = $conn->prepare("SELECT * FROM users WHERE email = :email");
     $params = [
         ':email' => $email,
     ];
@@ -25,6 +25,20 @@ function get_user_by_email($conn, $email)
     $users = $query->fetch(PDO::FETCH_ASSOC);
     return $users;
 };
+
+//Аваторизация пользователя
+function sign_in($conn, $email, $password) {
+
+    $user = get_user_by_email($conn, $email);
+
+    if(empty($user)) {
+        return "email error";
+    }elseif(!password_verify($password, $user['password'])) {
+        return "password error";
+    }else {
+        return $user;
+    }
+}
 
 //Добавить пользователя в БД
 function add_new_user ($conn, $email, $password)

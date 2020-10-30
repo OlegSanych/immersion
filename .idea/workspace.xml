@@ -3,14 +3,34 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/registration" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="adbacdcb-aa17-49c5-8390-c69b6e4b1f41" name="Default Changelist" comment="Создан репозиторий.">
-      <change afterPath="$PROJECT_DIR$/connectdb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page_login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page_register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+    <list default="true" id="adbacdcb-aa17-49c5-8390-c69b6e4b1f41" name="Default Changelist" comment="Регистрация ч.1">
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +41,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -69,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603969752343</updated>
-      <workItem from="1603969753471" duration="14686000" />
+      <workItem from="1603969753471" duration="18776000" />
     </task>
     <task id="LOCAL-00001" summary="Создан репозиторий.">
       <created>1603972159386</created>
@@ -78,18 +99,49 @@
       <option name="project" value="LOCAL" />
       <updated>1603972159386</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Создана ветка Registration">
+      <created>1604050789765</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604050789765</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/registration" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Создан репозиторий." />
-    <option name="LAST_COMMIT_MESSAGE" value="Создан репозиторий." />
+    <MESSAGE value="Регистрация ч.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Регистрация ч.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="293" y="49" key="#CLI_Interpreters" timestamp="1603980754279">
@@ -100,73 +152,91 @@
       <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state x="104" y="52" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.735@0.23.1280.735" timestamp="1603972478152" />
+    <state x="461" y="300" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1604051665118">
+      <screen x="0" y="23" width="1280" height="735" />
+    </state>
+    <state x="461" y="300" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.23.1280.735@0.23.1280.735" timestamp="1604051665118" />
     <state x="503" y="294" key="Github.ShareDialog" timestamp="1603972180833">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state x="503" y="294" key="Github.ShareDialog/0.23.1280.735@0.23.1280.735" timestamp="1603972180833" />
-    <state width="1238" height="229" key="GridCell.Tab.0.bottom" timestamp="1603983137917">
+    <state width="1238" height="229" key="GridCell.Tab.0.bottom" timestamp="1604055828842">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.0.bottom/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828842" />
     <state width="1238" height="229" key="GridCell.Tab.0.bottom/0.23.1280.735@0.23.1280.735" timestamp="1603983137917" />
-    <state width="1238" height="229" key="GridCell.Tab.0.center" timestamp="1603983137916">
+    <state width="1238" height="229" key="GridCell.Tab.0.center" timestamp="1604055828839">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.0.center/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828839" />
     <state width="1238" height="229" key="GridCell.Tab.0.center/0.23.1280.735@0.23.1280.735" timestamp="1603983137916" />
-    <state width="1238" height="229" key="GridCell.Tab.0.left" timestamp="1603983137916">
+    <state width="1238" height="229" key="GridCell.Tab.0.left" timestamp="1604055828837">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.0.left/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828837" />
     <state width="1238" height="229" key="GridCell.Tab.0.left/0.23.1280.735@0.23.1280.735" timestamp="1603983137916" />
-    <state width="1238" height="229" key="GridCell.Tab.0.right" timestamp="1603983137917">
+    <state width="1238" height="229" key="GridCell.Tab.0.right" timestamp="1604055828840">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.0.right/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828840" />
     <state width="1238" height="229" key="GridCell.Tab.0.right/0.23.1280.735@0.23.1280.735" timestamp="1603983137917" />
-    <state width="1238" height="229" key="GridCell.Tab.1.bottom" timestamp="1603983137920">
+    <state width="1238" height="229" key="GridCell.Tab.1.bottom" timestamp="1604055828847">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.1.bottom/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828847" />
     <state width="1238" height="229" key="GridCell.Tab.1.bottom/0.23.1280.735@0.23.1280.735" timestamp="1603983137920" />
-    <state width="1238" height="229" key="GridCell.Tab.1.center" timestamp="1603983137918">
+    <state width="1238" height="229" key="GridCell.Tab.1.center" timestamp="1604055828845">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.1.center/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828845" />
     <state width="1238" height="229" key="GridCell.Tab.1.center/0.23.1280.735@0.23.1280.735" timestamp="1603983137918" />
-    <state width="1238" height="229" key="GridCell.Tab.1.left" timestamp="1603983137918">
+    <state width="1238" height="229" key="GridCell.Tab.1.left" timestamp="1604055828843">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.1.left/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828843" />
     <state width="1238" height="229" key="GridCell.Tab.1.left/0.23.1280.735@0.23.1280.735" timestamp="1603983137918" />
-    <state width="1238" height="229" key="GridCell.Tab.1.right" timestamp="1603983137919">
+    <state width="1238" height="229" key="GridCell.Tab.1.right" timestamp="1604055828846">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.1.right/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828846" />
     <state width="1238" height="229" key="GridCell.Tab.1.right/0.23.1280.735@0.23.1280.735" timestamp="1603983137919" />
-    <state width="1238" height="229" key="GridCell.Tab.2.bottom" timestamp="1603983137922">
+    <state width="1238" height="229" key="GridCell.Tab.2.bottom" timestamp="1604055828851">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.2.bottom/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828851" />
     <state width="1238" height="229" key="GridCell.Tab.2.bottom/0.23.1280.735@0.23.1280.735" timestamp="1603983137922" />
-    <state width="1238" height="229" key="GridCell.Tab.2.center" timestamp="1603983137921">
+    <state width="1238" height="229" key="GridCell.Tab.2.center" timestamp="1604055828849">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.2.center/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828849" />
     <state width="1238" height="229" key="GridCell.Tab.2.center/0.23.1280.735@0.23.1280.735" timestamp="1603983137921" />
-    <state width="1238" height="229" key="GridCell.Tab.2.left" timestamp="1603983137920">
+    <state width="1238" height="229" key="GridCell.Tab.2.left" timestamp="1604055828848">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.2.left/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828848" />
     <state width="1238" height="229" key="GridCell.Tab.2.left/0.23.1280.735@0.23.1280.735" timestamp="1603983137920" />
-    <state width="1238" height="229" key="GridCell.Tab.2.right" timestamp="1603983137921">
+    <state width="1238" height="229" key="GridCell.Tab.2.right" timestamp="1604055828849">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state width="1238" height="229" key="GridCell.Tab.2.right/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828849" />
     <state width="1238" height="229" key="GridCell.Tab.2.right/0.23.1280.735@0.23.1280.735" timestamp="1603983137921" />
-    <state x="442" y="321" key="NewPhpFileDialog" timestamp="1603976498055">
+    <state x="442" y="321" key="NewPhpFileDialog" timestamp="1604055435860">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state x="442" y="321" key="NewPhpFileDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055435860" />
     <state x="442" y="321" key="NewPhpFileDialog/0.23.1280.735@0.23.1280.735" timestamp="1603976498055" />
     <state x="207" y="26" key="SettingsEditor" timestamp="1603980755470">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state x="207" y="26" key="SettingsEditor/0.23.1280.735@0.23.1280.735" timestamp="1603980755470" />
-    <state x="240" y="130" key="Vcs.Push.Dialog.v2" timestamp="1604050189148">
+    <state x="240" y="130" key="Vcs.Push.Dialog.v2" timestamp="1604051682033">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
-    <state x="240" y="130" key="Vcs.Push.Dialog.v2/0.23.1280.735@0.23.1280.735" timestamp="1604050189148" />
-    <state x="0" y="23" width="1280" height="735" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1603973103613">
+    <state x="240" y="130" key="Vcs.Push.Dialog.v2/0.23.1280.735@0.23.1280.735" timestamp="1604051682033" />
+    <state x="0" y="23" width="801" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604055393096">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state x="0" y="23" width="801" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055393096" />
     <state x="0" y="23" width="1280" height="735" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1280.735@0.23.1280.735" timestamp="1603973103613" />
   </component>
 </project>
