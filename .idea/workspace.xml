@@ -25,12 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adbacdcb-aa17-49c5-8390-c69b6e4b1f41" name="Default Changelist" comment="Регистрация ч.1">
-      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users.php" afterDir="false" />
+    <list default="true" id="adbacdcb-aa17-49c5-8390-c69b6e4b1f41" name="Default Changelist" comment="Авторизация">
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ff2ae0d-eb7f-4e7f-b534-b24e3bcf3027.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4ff2ae0d-eb7f-4e7f-b534-b24e3bcf3027.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_users.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603969752343</updated>
-      <workItem from="1603969753471" duration="18776000" />
+      <workItem from="1603969753471" duration="21795000" />
     </task>
     <task id="LOCAL-00001" summary="Создан репозиторий.">
       <created>1603972159386</created>
@@ -106,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604050789765</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Авторизация">
+      <created>1604056371785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604056371785</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +149,8 @@
     </ignored-roots>
     <MESSAGE value="Создан репозиторий." />
     <MESSAGE value="Регистрация ч.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Регистрация ч.1" />
+    <MESSAGE value="Авторизация" />
+    <option name="LAST_COMMIT_MESSAGE" value="Авторизация" />
   </component>
   <component name="WindowStateProjectService">
     <state x="293" y="49" key="#CLI_Interpreters" timestamp="1603980754279">
@@ -220,23 +229,24 @@
     </state>
     <state width="1238" height="229" key="GridCell.Tab.2.right/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055828849" />
     <state width="1238" height="229" key="GridCell.Tab.2.right/0.23.1280.735@0.23.1280.735" timestamp="1603983137921" />
-    <state x="442" y="321" key="NewPhpFileDialog" timestamp="1604055435860">
+    <state x="442" y="321" key="NewPhpFileDialog" timestamp="1604056786377">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
-    <state x="442" y="321" key="NewPhpFileDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055435860" />
+    <state x="442" y="321" key="NewPhpFileDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604056786377" />
     <state x="442" y="321" key="NewPhpFileDialog/0.23.1280.735@0.23.1280.735" timestamp="1603976498055" />
     <state x="207" y="26" key="SettingsEditor" timestamp="1603980755470">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state x="207" y="26" key="SettingsEditor/0.23.1280.735@0.23.1280.735" timestamp="1603980755470" />
-    <state x="240" y="130" key="Vcs.Push.Dialog.v2" timestamp="1604051682033">
+    <state x="240" y="130" key="Vcs.Push.Dialog.v2" timestamp="1604056393236">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
+    <state x="240" y="130" key="Vcs.Push.Dialog.v2/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604056393236" />
     <state x="240" y="130" key="Vcs.Push.Dialog.v2/0.23.1280.735@0.23.1280.735" timestamp="1604051682033" />
-    <state x="0" y="23" width="801" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604055393096">
+    <state x="0" y="23" width="801" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604058494706">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
-    <state x="0" y="23" width="801" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604055393096" />
+    <state x="0" y="23" width="801" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604058494706" />
     <state x="0" y="23" width="1280" height="735" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1280.735@0.23.1280.735" timestamp="1603973103613" />
   </component>
 </project>

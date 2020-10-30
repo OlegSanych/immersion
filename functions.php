@@ -51,6 +51,15 @@ function add_new_user ($conn, $email, $password)
     $query->execute($params);
 };
 
+//Получить список всех пользователей
+function list_users ($conn)
+{
+    $query = $conn->prepare("SELECT * FROM users ORDER BY id ASC");
+    $query->execute();
+
+    return $query->fetchAll();
+};
+
 //Подготовить сообщение
 function set_flash_message($key, $message)
 {
@@ -70,4 +79,29 @@ function redirect_to($path)
 {
     header('Location: ' . $path);
     exit();
+}
+
+//Проверка на авторизацию
+function is_not_logged_in () {
+
+    if(isset($_SESSION['email']) && !empty($_SESSION['email'])) {
+        return false;
+    }
+    return true;
+};
+
+//Авторизованный пользователь - админ?
+function check_admin () {
+    if($_SESSION['role'] == 1) {
+        return true;
+    }
+    return false;
+}
+
+//Тестирование
+function vd($value) {
+    echo '<pre>';
+    var_dump($value);
+    echo '</pre>';
+    die();
 }

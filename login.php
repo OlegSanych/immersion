@@ -20,7 +20,7 @@ if($user == "email error") {
     $_SESSION['email'] = $user['email'];
     $_SESSION['password'] = $user['password'];
     $_SESSION['role'] = $user['role'];
-    redirect_to("/users.php");
+    redirect_to("/page_users.php");
 }
 
 
