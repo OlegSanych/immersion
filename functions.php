@@ -49,6 +49,30 @@ function add_new_user ($conn, $email, $password)
         ':password' => password_hash($password, PASSWORD_DEFAULT)
     ];
     $query->execute($params);
+
+    return $conn->lastInsertId();
+};
+
+//Редактирование данных пользователя
+function edit_user($conn, $data, $id) {
+    $fields = '';
+
+    foreach($data as $key => $value) {
+        if($key == "full_name" || $key == "company" || $key == "phone_number" || $key == "address" || $key == "role"){
+            $fields .= $key . "=:" . $key . ",";
+        }else {
+            unset($data[$key]);
+        }
+    }
+
+    $data += ['id'=>$id];
+    $fields = rtrim($fields, ',');
+
+    $query = $conn->prepare("UPDATE users SET $fields WHERE id=:id");
+    $query->execute($data);
+    $data = $query->fetch(PDO::FETCH_ASSOC);
+    return $data;
+
 };
 
 //Получить список всех пользователей
@@ -59,6 +83,27 @@ function list_users ($conn)
 
     return $query->fetchAll();
 };
+
+//Редактирование данных пользователя
+function edit($data, $id) {
+    $fields = '';
+
+    foreach($data as $key => $value) {
+        if($key == "full_name" || $key == "company" || $key == "phone_number" || $key == "address" || $key == "role"){
+            $fields .= $key . "=:" . $key . ",";
+        }else {
+            unset($data[$key]);
+        }
+    }
+
+    $data += ['id'=>$id];
+    $fields = trim($fields, ',');
+
+    $conn = new PDO("mysql:host=" . HOSTNAME . ";dbname=" . DATABASE . ";", USERNAME, PASSWORD);
+    $sql = "UPDATE users SET $fields WHERE id=:id";
+    $statement = $conn->prepare($sql);
+    $statement->execute($data);
+}
 
 //Подготовить сообщение
 function set_flash_message($key, $message)

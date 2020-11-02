@@ -818,7 +818,7 @@ SELECT|sys.sys_config:null
     <column id="249" parent="242" name="role">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
-      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <DefaultExpression>&apos;Пользователь&apos;</DefaultExpression>
     </column>
     <column id="250" parent="242" name="company">
       <Position>8</Position>
