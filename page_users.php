@@ -95,7 +95,7 @@ $conn = new PDO("mysql:host=" . HOSTNAME . ";dbname=" . DATABASE . ";", USERNAME
                                 <a class="dropdown-item" href="page_edit.php?id=<?php echo $user['id']; ?>">
                                     <i class="fa fa-edit"></i>
                                     Редактировать</a>
-                                <a class="dropdown-item" href="security.php?id=<?php echo $user['id']; ?>">
+                                <a class="dropdown-item" href="page_security.php?id=<?php echo $user['id']; ?>">
                                     <i class="fa fa-lock"></i>
                                     Безопасность</a>
                                 <a class="dropdown-item" href="status.php?id=<?php echo $user['id']; ?>">

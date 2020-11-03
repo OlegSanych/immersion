@@ -97,6 +97,33 @@ function list_users ($conn)
     return $query->fetchAll();
 };
 
+//Обновить данные авторизации пользователя
+function update_credentials($conn, $id, $email = null, $password = null) {
+    if ($email == null) {
+        $query = $conn->prepare("UPDATE users SET password=:password WHERE id=:id");
+        $params = [
+            ':id' => $id,
+            ':password' => password_hash($password, PASSWORD_DEFAULT),
+        ];
+        $query->execute($params);
+    } elseif ($password == null) {
+        $query = $conn->prepare("UPDATE users SET email=:email WHERE id=:id");
+        $params = [
+            ':id' => $id,
+            ':email' => $email,
+        ];
+        $query->execute($params);
+    } else {
+        $query = $conn->prepare("UPDATE users SET password=:password, email=:email WHERE id=:id");
+        $params = [
+            ':id' => $id,
+            ':email' => $email,
+            ':password' => password_hash($password, PASSWORD_DEFAULT),
+        ];
+        $query->execute($params);
+    }
+};
+
 //Подготовить сообщение
 function set_flash_message($key, $message)
 {
