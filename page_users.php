@@ -92,7 +92,7 @@ $conn = new PDO("mysql:host=" . HOSTNAME . ";dbname=" . DATABASE . ";", USERNAME
                             </a>
                             <?php if (check_admin() || $_SESSION['email'] == $user['email']) :?>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="edit.php?id=<?php echo $user['id']; ?>">
+                                <a class="dropdown-item" href="page_edit.php?id=<?php echo $user['id']; ?>">
                                     <i class="fa fa-edit"></i>
                                     Редактировать</a>
                                 <a class="dropdown-item" href="security.php?id=<?php echo $user['id']; ?>">

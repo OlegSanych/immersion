@@ -13,6 +13,7 @@ try {
 } catch (PDOException $e) {
     echo 'Подключение не удалось: ' . $e->getMessage();
 };
+
 /////////////////////////////////
 //Получить пользователя по email
 function get_user_by_email($conn, $email)
@@ -24,6 +25,18 @@ function get_user_by_email($conn, $email)
     $query->execute($params);
     $users = $query->fetch(PDO::FETCH_ASSOC);
     return $users;
+};
+
+//Получить пользователя по email
+function get_user_by_id($conn, $id)
+{
+    $query = $conn->prepare("SELECT * FROM users WHERE id = :id");
+    $params = [
+        ':id' => $id,
+    ];
+    $query->execute($params);
+    $user = $query->fetch(PDO::FETCH_ASSOC);
+    return $user;
 };
 
 //Аваторизация пользователя
@@ -38,7 +51,7 @@ function sign_in($conn, $email, $password) {
     }else {
         return $user;
     }
-}
+};
 
 //Добавить пользователя в БД
 function add_new_user ($conn, $email, $password)
@@ -84,33 +97,13 @@ function list_users ($conn)
     return $query->fetchAll();
 };
 
-//Редактирование данных пользователя
-function edit($data, $id) {
-    $fields = '';
-
-    foreach($data as $key => $value) {
-        if($key == "full_name" || $key == "company" || $key == "phone_number" || $key == "address" || $key == "role"){
-            $fields .= $key . "=:" . $key . ",";
-        }else {
-            unset($data[$key]);
-        }
-    }
-
-    $data += ['id'=>$id];
-    $fields = trim($fields, ',');
-
-    $conn = new PDO("mysql:host=" . HOSTNAME . ";dbname=" . DATABASE . ";", USERNAME, PASSWORD);
-    $sql = "UPDATE users SET $fields WHERE id=:id";
-    $statement = $conn->prepare($sql);
-    $statement->execute($data);
-}
-
 //Подготовить сообщение
 function set_flash_message($key, $message)
 {
     $_SESSION[$key] = $message;
     $_SESSION['status_message'] = $key;
-}
+};
+
 //Показать сообщение
 function display_flash_message($key) {
     if (!empty($_SESSION[$key])) {
@@ -119,12 +112,13 @@ function display_flash_message($key) {
         unset($_SESSION['status_message']);
     }
 };
+
 //Перенаправить на страницу
 function redirect_to($path)
 {
     header('Location: ' . $path);
     exit();
-}
+};
 
 //Проверка на авторизацию
 function is_not_logged_in () {
@@ -137,11 +131,19 @@ function is_not_logged_in () {
 
 //Авторизованный пользователь - админ?
 function check_admin () {
-    if($_SESSION['role'] == 1) {
+    if($_SESSION['role'] == 'Администратор') {
         return true;
     }
     return false;
-}
+};
+
+//Авторизованный пользователь - автор?
+function check_author ($sign_in_user_id, $edit_user_id) {
+    if ($sign_in_user_id == $edit_user_id) {
+        return true;
+    }
+    return false;
+};
 
 //Тестирование
 function vd($value) {
@@ -149,4 +151,4 @@ function vd($value) {
     var_dump($value);
     echo '</pre>';
     die();
-}
+};
