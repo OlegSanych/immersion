@@ -27,7 +27,7 @@ function get_user_by_email($conn, $email)
     return $users;
 };
 
-//Получить пользователя по email
+//Получить пользователя по id
 function get_user_by_id($conn, $id)
 {
     $query = $conn->prepare("SELECT * FROM users WHERE id = :id");
@@ -149,7 +149,7 @@ function upload_avatar ($image, $conn, $id) {
         ':img_avatar' => $filename,
     ];
     $query->execute($params);
-}
+};
 
 //Удалить аватар
 function delete_avatar ($conn, $id) {
@@ -161,6 +161,21 @@ function delete_avatar ($conn, $id) {
     $params = [
         ':id' => $id,
         ':img_avatar' => NULL,
+    ];
+    $query->execute($params);
+};
+
+//Удалить пользователя
+function delete($conn, $id) {
+
+    $img_for_delete = get_user_by_id($conn, $id);
+    if (!empty($img_for_delete['img_avatar'])){
+        unlink("img/avatar/" . $img_for_delete['img_avatar']);
+    }
+
+    $query = $conn->prepare("DELETE FROM users WHERE id=:id");
+    $params = [
+        ':id' => $id,
     ];
     $query->execute($params);
 };
