@@ -19,6 +19,8 @@ $id = add_new_user($conn, $email, $password);
 
 edit_user($conn, $data, $id);
 
+set_status($conn, $data['online_status'], $id);
+
 set_flash_message("success", "Профиль успешно создан");
 redirect_to("/page_users.php");
 

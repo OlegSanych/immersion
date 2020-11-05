@@ -113,10 +113,10 @@ $conn = new PDO("mysql:host=" . HOSTNAME . ";dbname=" . DATABASE . ";", USERNAME
                             <!-- status -->
                             <div class="form-group">
                                 <label class="form-label" for="example-select">Выберите статус</label>
-                                <select class="form-control" name="status" id="example-select">
-                                    <option>Онлайн</option>
-                                    <option>Отошел</option>
-                                    <option>Не беспокоить</option>
+                                <select class="form-control" name="online_status" id="example-select">
+                                    <option value="online">Онлайн</option>
+                                    <option value="away">Отошел</option>
+                                    <option value="busy">Не беспокоить</option>
                                 </select>
                             </div>
 

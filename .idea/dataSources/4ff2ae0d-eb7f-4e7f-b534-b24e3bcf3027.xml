@@ -832,7 +832,11 @@ SELECT|sys.sys_config:null
       <Position>10</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="253" parent="242" name="PRIMARY">
+    <column id="253" parent="242" name="online_status">
+      <Position>11</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <key id="254" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

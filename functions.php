@@ -124,6 +124,17 @@ function update_credentials($conn, $id, $email = null, $password = null) {
     }
 };
 
+//Изменить статус
+function set_status($conn, $status, $id) {
+
+    $query = $conn->prepare("UPDATE users SET online_status=:online_status WHERE id=:id");
+    $params = [
+        ':id' => $id,
+        ':online_status' => $status,
+    ];
+    $query->execute($params);
+}
+
 //Подготовить сообщение
 function set_flash_message($key, $message)
 {
