@@ -799,44 +799,41 @@ SELECT|sys.sys_config:null
       <Position>2</Position>
       <DataType>varchar(355)|0s</DataType>
     </column>
-    <column id="245" parent="242" name="login">
+    <column id="245" parent="242" name="email">
       <Position>3</Position>
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="246" parent="242" name="email">
+    <column id="246" parent="242" name="password">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="247" parent="242" name="password">
+    <column id="247" parent="242" name="img_avatar">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
+      <DefaultExpression>&apos;no_avatar.png&apos;</DefaultExpression>
     </column>
-    <column id="248" parent="242" name="avatar">
+    <column id="248" parent="242" name="role">
       <Position>6</Position>
-      <DataType>varchar(255)|0s</DataType>
-    </column>
-    <column id="249" parent="242" name="role">
-      <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <DefaultExpression>&apos;Пользователь&apos;</DefaultExpression>
     </column>
-    <column id="250" parent="242" name="company">
+    <column id="249" parent="242" name="company">
+      <Position>7</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="250" parent="242" name="phone_number">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="251" parent="242" name="phone_number">
+    <column id="251" parent="242" name="address">
       <Position>9</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="252" parent="242" name="address">
+    <column id="252" parent="242" name="online_status">
       <Position>10</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="253" parent="242" name="online_status">
-      <Position>11</Position>
-      <DataType>varchar(255)|0s</DataType>
-    </column>
-    <key id="254" parent="242" name="PRIMARY">
+    <key id="253" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

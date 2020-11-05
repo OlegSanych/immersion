@@ -135,6 +135,46 @@ function set_status($conn, $status, $id) {
     $query->execute($params);
 }
 
+//Загрузить аватар
+function upload_avatar ($image, $conn, $id) {
+
+    $extension = pathinfo($image['name'], PATHINFO_EXTENSION);
+    $filename = uniqid() . "." . $extension;
+
+    move_uploaded_file($image['tmp_name'], "img/avatar/" . $filename);
+
+    $query = $conn->prepare("UPDATE users SET img_avatar=:img_avatar WHERE id=:id");
+    $params = [
+        ':id' => $id,
+        ':img_avatar' => $filename,
+    ];
+    $query->execute($params);
+}
+
+//Удалить аватар
+function delete_avatar ($conn, $id) {
+
+    $img_for_delete = get_user_by_id($conn, $id);
+    unlink("img/avatar/" . $img_for_delete['img_avatar']);
+
+    $query = $conn->prepare("UPDATE users SET img_avatar=:img_avatar WHERE id=:id");
+    $params = [
+        ':id' => $id,
+        ':img_avatar' => NULL,
+    ];
+    $query->execute($params);
+};
+
+//Проверить аватар на наличие
+function has_image($conn, $id) {
+    $user_img = get_user_by_id($conn, $id);
+
+    if(empty($user_img['img_avatar'])) {
+        return false;
+    }
+    return true;
+}
+
 //Подготовить сообщение
 function set_flash_message($key, $message)
 {

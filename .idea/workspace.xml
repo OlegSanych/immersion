@@ -25,14 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adbacdcb-aa17-49c5-8390-c69b6e4b1f41" name="Default Changelist" comment="Редактировать авторизационные данные">
-      <change afterPath="$PROJECT_DIR$/change_status.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/page_status.php" afterDir="false" />
+    <list default="true" id="adbacdcb-aa17-49c5-8390-c69b6e4b1f41" name="Default Changelist" comment="Установить статус">
+      <change afterPath="$PROJECT_DIR$/change_media.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/page_media.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4ff2ae0d-eb7f-4e7f-b534-b24e3bcf3027.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4ff2ae0d-eb7f-4e7f-b534-b24e3bcf3027.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_create_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_create_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/page_users.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpDebugGeneral" break_at_first_line="true" />
+  <component name="PhpDebugGeneral" break_at_first_line="true" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="immersion" id="989baff4-1ea9-4fe2-9733-f8699d19f29b" name="immersion" port="8888" />
@@ -93,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603969752343</updated>
-      <workItem from="1603969753471" duration="48094000" />
+      <workItem from="1603969753471" duration="52184000" />
     </task>
     <task id="LOCAL-00001" summary="Создан репозиторий.">
       <created>1603972159386</created>
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604398220327</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Установить статус">
+      <created>1604576876555</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604576876555</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +198,8 @@
     <MESSAGE value="Редактировать пользователя" />
     <MESSAGE value="Профиль" />
     <MESSAGE value="Редактировать авторизационные данные" />
-    <option name="LAST_COMMIT_MESSAGE" value="Редактировать авторизационные данные" />
+    <MESSAGE value="Установить статус" />
+    <option name="LAST_COMMIT_MESSAGE" value="Установить статус" />
   </component>
   <component name="WindowStateProjectService">
     <state x="293" y="49" key="#CLI_Interpreters" timestamp="1603980754279">
@@ -275,24 +282,39 @@
     </state>
     <state width="1238" height="216" key="GridCell.Tab.2.right/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604392692891" />
     <state width="1238" height="229" key="GridCell.Tab.2.right/0.23.1280.735@0.23.1280.735" timestamp="1603983137921" />
-    <state x="448" y="392" key="NewPhpFileDialog" timestamp="1604575393316">
+    <state x="448" y="392" key="NewPhpFileDialog" timestamp="1604579174585">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
-    <state x="448" y="392" key="NewPhpFileDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604575393316" />
+    <state x="448" y="392" key="NewPhpFileDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604579174585" />
     <state x="442" y="321" key="NewPhpFileDialog/0.23.1280.735@0.23.1280.735" timestamp="1603976498055" />
     <state x="207" y="26" key="SettingsEditor" timestamp="1603980755470">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state x="207" y="26" key="SettingsEditor/0.23.1280.735@0.23.1280.735" timestamp="1603980755470" />
-    <state x="240" y="130" key="Vcs.Push.Dialog.v2" timestamp="1604398222935">
+    <state x="240" y="130" key="Vcs.Push.Dialog.v2" timestamp="1604576878810">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
-    <state x="240" y="130" key="Vcs.Push.Dialog.v2/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604398222935" />
+    <state x="240" y="130" key="Vcs.Push.Dialog.v2/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604576878810" />
     <state x="240" y="130" key="Vcs.Push.Dialog.v2/0.23.1280.735@0.23.1280.735" timestamp="1604051682033" />
-    <state x="0" y="23" width="801" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604575792209">
+    <state x="404" y="216" width="472" height="344" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1604581330581">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
-    <state x="0" y="23" width="801" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604575792209" />
+    <state x="404" y="216" width="472" height="344" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604581330581" />
+    <state x="0" y="23" width="801" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604581340735">
+      <screen x="0" y="23" width="1280" height="735" />
+    </state>
+    <state x="0" y="23" width="801" height="613" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-640.-1057.1920.1057/0.23.1280.735@0.23.1280.735" timestamp="1604581340735" />
     <state x="0" y="23" width="1280" height="735" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1280.735@0.23.1280.735" timestamp="1603973103613" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/change_media.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

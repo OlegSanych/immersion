@@ -63,7 +63,7 @@ $user = get_user_by_id($conn, $current_user);
                 <div class="row no-gutters row-grid">
                     <div class="col-12">
                         <div class="d-flex flex-column align-items-center justify-content-center p-4">
-                            <img src="img/demo/avatars/avatar-admin-lg.png" class="rounded-circle shadow-2 img-thumbnail" alt="">
+                            <img src="img/avatar/<?php echo $user['img_avatar']; ?>" class="rounded-circle shadow-2 img-thumbnail" alt="">
                             <h5 class="mb-0 fw-700 text-center mt-3">
                                 <?php echo $user['full_name']; ?>
                                 <small class="text-muted mb-0"><?php echo $user['company']; ?></small>
